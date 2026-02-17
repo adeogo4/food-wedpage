@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Poppins" sans-serif;
+}
+
+body {
+   background-color: #000 !important;
+   margin: 0%;
+   min-width: 100vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+body::before{
+   content: "";
+   position: fixed;
+   inset: 0;
+   background: rgba(129, 128, 128, 0.3);
+   pointer-events: none;
+   z-index: -1;
+}
+
+/* header */
+header {
+   background: rgba(0, 0, 0, 0.4);
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed !important;
+   top: 0;
+   left: 0;
+   z-index: 999999 !important;
+}
+
+header .logo {
+   color: blue;
+   font-size: 28px;
+   font-weight: 700;
+}
+
+header nav a {
+   display: inline-block;
+   font-size: 18px;
+   text-decoration: solid;
+   color: #f7f5f5;
+   padding: 0 10px;
+}
+
+/* hero section */
+.hero {
+   margin-top: -10%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 10%;
+   z-index: 1;
+}
+
+.hero-text {
+   padding: 3%;
+   position: absolute;
+   max-width: 650px;
+}
+
+.mini {
+   font-size: 26px;
+   text-transform: capitalize;
+}
+
+.title {
+   font-size: 85px;
+   font-weight: 800;
+   line-height: 1.1;
+   color: #000;
+   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+   position: relative;
+   z-index: 10;
+}
+
+.title span {
+   color: #e24343;
+   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.desc {
+   margin: 20px 0;
+   font-size: 200%;
+   font-weight: 150;
+   line-height: 1.5;
+   color: #000;
+   font-weight: 500;
+   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.buttons {
+   margin-top: 25px;
+}
+
+.btn-menu {
+   padding: 12px 28px;
+   text-decoration: none;
+   border-radius: 12px;
+   font-weight: 600;
+   margin-right: 15px;
+   display: inline-block;
+   background: #ffb400;
+   color: white;
+}
+
+.btn-drinks {
+   padding: 12px 28px;
+   text-decoration: none;
+   border-radius: 12px;
+   font-weight: 600;
+   margin-right: 15px;
+   display: inline-block;
+   background: #000;
+   color: white;
+}
+
+/* hero img */
+.hero-img img {
+   justify-content: center;
+   width: 100vw;
+   height: auto;
+   overflow: hidden;
+   height: auto;
+   border-radius: 20px;
+}
+
+.line1 h4 {
+   padding-top: 13%;
+   font-size: 38px;
+   font-weight: 700;
+   text-align: center;
+   margin-top: 3rem;
+   color: #000;
+   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+   position: relative;
+   z-index: 10;
+}
+
+.sec1 {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   margin-top: -3%;
+   padding: 3%;
+   gap: 1.1rem;
+}
+
+.card {
+   width: 250px;
+   height: 340px !important;
+   /* padding: 12px; */
+   background: #fff;
+   border-radius: 15px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+   transition: transform 0.4s ease-in;
+   transform: scale(1);
+   margin-top: 35%;
+}
+
+.card:hover {
+   transform: scale(1.05);
+   transition-timing-function: ease-out;
+}
+
+.card-img {
+   position: relative;
+   height: 140px;
+   overflow: hidden;
+   flex-shrink: 0;
+}
+
+.card-img img {
+   width: 100%;
+   height: 80%;
+   object-fit: cover;
+}
+
+.card-body {
+   margin-top: -15%;
+   flex: 1;
+   text-align: center;
+   box-sizing: border-box;
+}
+
+.card-body h3 { 
+   color: #333;
+}
+
+.time {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #444;
+   margin-top: 10%;
+}
+
+.rating {
+   font-size: 20px;
+   color: orange;
+   margin: 1px;
+}
+
+.order-btn {
+   background: #ff6a00;
+   color: #fff;
+   border: none;
+   padding: 10px 25px;
+   border-radius: 25px;
+   cursor: pointer;
+   font-size: 14px;
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.order-btn:hover {
+   background: #e65b00;
+}
+
+.aboutus-content {
+   display: flex;
+}
+
+.aboutus-img {
+   padding-top: -10rem;
+}
+
+.aboutus-text {
+   color: #f5f1f1;
+   margin: 3rem;
+   padding-left: 15%;
+   font-size: 130%;
+}
+
+.aboutus-text p h2 {
+   padding-left: 17%;
+   padding-bottom: 2rem;
+   color: #000;
+}
+
+.aboutus-text p {
+   font-size: 20px;
+   padding-top: 1rem;
+   padding-left: 15%;
+   margin: 2rem;
+}
+
+.nav2 {
+   color: white;
+   margin-bottom: -15%;
+   margin-left: 10%;
+   /* padding: 10px 10px; */
+   /* margin: 10px 10px 0px 10px; */
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   position: relative;
+   z-index: 1000;
+}
+
+.nav2 a {
+   font-size: 1.2rem;
+   display: inline-block;
+   text-decoration: none;
+   color: #faf8f8;
+   font-weight: 400;
+   transition: color 0.3s ease;
+}
+
+.nav2 a:first-child {
+   color: #fcf9f9;
+   font-weight: 600;
+}
+
+.nav2 a.active {
+   color: #fc8686;
+   font-weight: 600;
+}
+
+.nav2 a:hover {
+   color: #f39d9d;
+}
+
+.box2 {
+   display: flex;
+}
+.nav21{
+   padding-top: 6%;
+}
+
+.sec2 {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   margin: 5%;
+   padding: 5%;
+  
+   gap: 1rem;
+}
+
+/* Default heading styles */
+h1, h2, h3, h4, h5, h6 {
+   color: #000;
+   font-weight: 600;
+   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.header1 {
+   background: rgba(0, 0, 0, 0.4);
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed !important;
+   top: 0;
+   left: 0;
+   /* z-index: 999999 !important; */
+}
+
+.header1 .logo {
+   color: blue;
+   font-size: 28px;
+   font-weight: 700;
+}
+.header1 nav a {
+   display: inline-block;
+   font-size: 18px;
+   text-decoration: solid;
+   color: #f7f5f5;
+   padding: 0 10px;
+}
+
+/* order now css */
+.move{
+ 
+}
