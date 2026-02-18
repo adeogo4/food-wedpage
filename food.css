@@ -101,38 +101,36 @@ header nav a {
    z-index: 10;
    max-width: 650px;
    text-align: left;
-   padding: 50px;
-   background: rgba(255, 255, 255, 0.95);
-   border-radius: 20px;
-   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+   padding: 0;
 }
 
 .mini {
    font-size: 26px;
    text-transform: capitalize;
+   color: #fff;
 }
 
 .title {
    font-size: 4.5vw;
    font-weight: 800;
    line-height: 1.1;
-   color: #000;
-   text-shadow: none;
+   color: #fff;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
    margin-bottom: 20px;
 }
 
 .title span {
-   color: #e24343;
-   text-shadow: none;
+   color: #ffb400;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .desc {
    margin: 20px 0;
    font-size: 1.2rem;
    line-height: 1.6;
-   color: #333;
+   color: #fff;
    font-weight: 500;
-   text-shadow: none;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .buttons {
@@ -562,7 +560,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .hero-text {
-      padding: 25px;
+      padding: 0;
       max-width: 100%;
       text-align: center;
    }
@@ -647,7 +645,7 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .hero-text {
-      padding: 20px;
+      padding: 0;
    }
 
    .title {
