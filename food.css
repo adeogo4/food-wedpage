@@ -61,7 +61,7 @@ header nav a {
    position: relative;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-start;
    padding: 80px 5%;
    min-height: 600px;
    max-width: 100%;
@@ -99,9 +99,9 @@ header nav a {
 .hero-text {
    position: relative;
    z-index: 10;
-   max-width: 800px;
-   text-align: center;
-   padding: 40px;
+   max-width: 650px;
+   text-align: left;
+   padding: 50px;
    background: rgba(255, 255, 255, 0.95);
    border-radius: 20px;
    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -140,7 +140,7 @@ header nav a {
    display: flex;
    gap: 15px;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: flex-start;
 }
 
 .btn-menu {
@@ -558,11 +558,13 @@ h1, h2, h3, h4, h5, h6 {
    .hero {
       padding: 120px 5% 40px;
       min-height: 400px;
+      justify-content: center;
    }
 
    .hero-text {
       padding: 25px;
       max-width: 100%;
+      text-align: center;
    }
 
    .title {
@@ -576,6 +578,7 @@ h1, h2, h3, h4, h5, h6 {
    .buttons {
       flex-direction: column;
       width: 100%;
+      justify-content: center;
    }
 
    .btn-menu, .btn-drinks {
